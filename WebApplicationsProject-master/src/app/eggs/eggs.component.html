@@ -1,0 +1,12 @@
+<h2>My Eggs</h2>
+
+
+<ul class="eggs">
+	<li *ngFor="let egg of eggs"
+		[class.selected]="egg === selectedEgg"
+		(click)="onSelect(egg)">
+			<span class="badge">{{egg.id}}</span>{{egg.egg_name}}
+	</li>
+</ul>
+
+<app-egg-detail [egg]="selectedEgg"></app-egg-detail>

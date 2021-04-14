@@ -1,0 +1,17 @@
+<div *ngIf="!this.authenticationService.currentUserValue">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label>
+            Login:
+            <input type="text" formControlName="userLogin">
+        </label>
+        <label>
+            Password:
+            <input type="password" formControlName="userPassword">
+        </label>
+        <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+</div>
+<div *ngIf="this.authenticationService.currentUserValue">
+    <div><span>Login: </span>{{this.logged[0].login}} <span> Gold: </span>{{this.logged[0].gold}}</div>
+    <button (click)="logout()">Logout</button>
+</div>

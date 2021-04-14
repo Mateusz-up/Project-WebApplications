@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Server for project's api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunerien/WebApplicationsProject.git"
+  },
+  "author": "Łukasz Kała, Mateusz Dec, Konrad Rakoczy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lunerien/WebApplicationsProject/issues"
+  },
+  "homepage": "https://github.com/lunerien/WebApplicationsProject#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
